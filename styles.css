@@ -1,0 +1,113 @@
+/* Estilos comunes para todos los tamaños de pantalla */
+/* Alinea la barra de búsqueda en la esquina superior derecha con espacio a la izquierda */
+.navbar{
+    background-color: #777;
+}
+.nav-item{
+    padding-left: 4rem;
+}
+a.nav-link{
+    color: white;
+}
+
+
+#search-form {
+    position: absolute;
+    top: 10px;
+    right: 15px; /* Alinea a la derecha con un espacio a la izquierda */
+}
+
+/* Estilos para la barra de búsqueda */
+.form-control.form-control-sm {
+    border-color: gray;
+    color: gray;
+}
+
+.form-control.form-control-sm::placeholder {
+    color: #777;
+}
+.nav-item{
+    padding-right: 60px
+    
+}
+
+.uno {
+    display: flex;
+    justify-content: center; /* Centra horizontalmente el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    flex-direction: column;
+}
+
+.dos{
+    display: flex;
+}
+
+.accordion {
+    display: flex;
+    flex-direction: column; /* Alinea los elementos verticalmente en una columna */
+    width: 30%; /* Establece el ancho del contenedor de los elementos de la clase .accordion */
+    height: 30%; 
+    margin: 0 10px 0 10%;
+    border: solid 1px black;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-items:center;
+}
+
+.square {
+    width: calc(33.33% - 20px);
+    height: 100px;
+    background-color: aliceblue;
+    margin-bottom: 20px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.carousel-inner{
+    font-size: 16px;
+}
+
+
+/* Estilos adicionales */
+.custom-search-form {
+    display: flex;
+    align-items: end;
+}
+
+.custom-search-input {
+    margin-right: 10px;
+}
+
+
+@media (max-width: 768px) {
+    .square {
+        width: calc(50% - 20px);
+    }
+    
+    #search-form {
+        position: relative;
+        top: -160px;
+        right: 0;
+        border-radius: 5px; /* Esquinas redondeadas */
+   }
+    button.navbar-toggler{
+        margin-bottom: 30px;
+    }
+    .custom-search-input {
+        margin-right: 0;
+    }
+
+    .navbar-brand{
+        margin-bottom: 40px;
+    }
+    
+}
+/* Media query para pantallas de tamaño medio (SM) */
+@media (max-width: 480px) {
+    .square {
+        width: calc(100% - 20px); 
+    }
+}
